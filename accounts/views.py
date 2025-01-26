@@ -3,12 +3,12 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import UserSerializer, LoginSerializer
-from .models import CustomUser
+from .models import Student
 
 
 # Signup View
 class SignupView(generics.CreateAPIView):
-    queryset = CustomUser.objects.all()
+    queryset = Student.objects.all()
     serializer_class = UserSerializer
 
 
