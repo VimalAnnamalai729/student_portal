@@ -28,16 +28,3 @@ class Student(AbstractUser):
 
     def __str__(self):
         return self.email
-
-# class User(models.Model):
-#
-#     user_id = models.BigAutoField(primary_key=True)
-#     email = models.EmailField()
-#     user_id = models.BigAutoField(primary_key=True)
-#     user_id = models.BigAutoField(primary_key=True)
-#     user_id = models.BigAutoField(primary_key=True)
-
-"""
-INSERT  TABLENAME INTO  (USER-id, username, firsname)
-VALUES(1,vimal, annamalai)
-"""
